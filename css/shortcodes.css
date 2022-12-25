@@ -3,7 +3,7 @@
     display: block;
     width: 100%;
     text-align: center;
-    margin-bottom: 26px;
+    margin-bottom: 40px;
 }
 
 .section-title h5{
@@ -2517,7 +2517,7 @@ ul.ttm-recent-post-list li:after {
     transition: all 0.3s ease 0s;
 }
 .pagination-block .page-numbers.current {
-    background-color: #3368c6;
+    background-color: var(--color-main-theme);
     color: #fff;
 }
 .pagination-block .page-numbers i{ font-size: 12px; }

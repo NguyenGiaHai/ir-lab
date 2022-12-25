@@ -945,11 +945,6 @@ rs-dotted.threexthreewhite		{	background:url(../assets/gridtile_3x3_white.png)}
 	background: #333;	
 }
 
-.rev-scroll-btn.revs-fulldark,  {
-	background:#333;
-	border:none;
-}
-
 .rev-scroll-btn.revs-fulldark  span {
 	background: #fff;	
 }
