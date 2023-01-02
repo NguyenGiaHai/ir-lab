@@ -44,7 +44,27 @@
     font-weight: normal;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+}
 
+table th {
+    background-color: var(--color-main-theme);
+    color: #fff;
+    font-weight: 700;
+}
+
+table th ,
+table td {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+table th ~ th {
+    border-left: 1px solid var(--color-title);
+}
 
 /* ===============================================
     7.sep_holder
@@ -1960,48 +1980,6 @@ blockquote:after {
     border-top: 1px solid #eaeff5;
 }
 
-
-/* ===============================================
-    15.Client-row  
-------------------------*/
-.client-box{ 
-    position: relative;
-    text-align: center;
-}
-.client-box .ttm-client-logo-tooltip{ 
-    padding-top: 35px; 
-    padding-bottom: 35px;
-}
-.client-box .ttm-client-logo-tooltip,
-.client-box .ttm-client-logo-tooltip-inner{
-    position: relative;
-    overflow: hidden;
-}
-.client-box .ttm-client-logo-tooltip img{
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-}
-.client-box .tooltip-top:after, .client-box .tooltip-top:before, .client-box .tooltip:after, 
-.client-box .tooltip:before, .client-box [data-tooltip]:after, .client-box [data-tooltip]:before { 
-    bottom: 68%; 
-}
-.client-box .ttm-client-logo-tooltip .client-thumbnail_hover{
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    z-index: 1;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-}
-.client-box:hover .ttm-client-logo-tooltip .client-thumbnail_hover {
-    bottom: 0;
-}
-
-
-
 /* ===============================================
     16.Accordion
 ------------------------*/
@@ -2135,33 +2113,6 @@ blockquote:after {
     color: #8a91ac;
 }
 
-/* contactform */
-.wrap-form.ttm-contactform-1 span.text-input i {
-    position: absolute;
-    left: 0;
-    top: 20px;
-    opacity: .9;
-    font-size: 16px;
-    z-index: 1;
-}
-.wrap-form.ttm-contactform-1 span.text-input input, 
-.wrap-form.ttm-contactform-1 span.text-input textarea,
-.wrap-form.ttm-contactform-1 span.text-input select {
-    border-radius: 0;
-    color: rgba(0,0,0,.60);
-}
-.wrap-form.ttm-contactform-1 button[type="submit"] { 
-    width: 100%;
-    height: 54px;
-}
-.ttm-bgcolor-white .wrap-form.ttm-contactform-1 span.text-input input, 
-.ttm-bgcolor-white .wrap-form.ttm-contactform-1 span.text-input textarea,
-.ttm-bgcolor-white .wrap-form.ttm-contactform-1 span.text-input select{
-    background-color: #f7faff;
-    border-color: rgba(0, 0, 0, 0.04);
-}
-
-
 /* ===============================================
     18.Tab
 ------------------------*/
@@ -2223,21 +2174,6 @@ blockquote:after {
     line-height: 27px;
     margin: 0;
     border-radius: 0;
-}
-
-/* ttm-tab-style-horizontal */
-.ttm-tabs.ttm-tab-style-horizontal ul{ margin: 0; padding: 0; text-align: left; }
-.ttm-tabs.ttm-tab-style-horizontal ul.tabs li{ display: inline-block; border: 0; margin: 0; }
-.ttm-tabs.ttm-tab-style-horizontal ul.tabs li a{ 
-    padding: 12px 16px 12px 16px; 
-    font-size: 15px; 
-    display: block;
-    font-weight: 600;
-    text-align: left;
-}
-.ttm-tabs.ttm-tab-style-horizontal .content-tab   {
-    padding: 20px;
-    border: 1px solid;
 }
 
 /* ===============================================
@@ -2328,41 +2264,6 @@ blockquote:after {
     background-color: #fff;
 }
 
-
-/*widget-post*/
-ul.ttm-recent-post-list>li{
-    padding: 14px 0;
-}
-ul.ttm-recent-post-list>li:first-child{
-    padding-top: 0;
-}
-ul.ttm-recent-post-list>li:last-child{
-    padding-bottom: 5px;
-}
-ul.ttm-recent-post-list>li>a {
-    font-size: 15px;
-    line-height: 22px;
-    display: block;
-    font-weight: 500;
-}
-ul.ttm-recent-post-list>li img {
-    display: block;
-    width: 70px;
-    height: 65px;
-    float: left;
-    margin-right: 18px;
-}
-ul.ttm-recent-post-list>li .post-date {
-    display: block;
-    font-size: 13px;
-    line-height: 20px;
-}
-ul.ttm-recent-post-list li:after {
-    content: " ";
-    display: table;
-    clear: both;
-}
-
 /* widget-nav-menu */
 .widget.widget-nav-menu ul li{ 
     margin-bottom: 10px;
@@ -2418,83 +2319,6 @@ ul.ttm-recent-post-list li:after {
 }
 
 
-/* widget-download */
-.widget.widget-download ul li{ 
-    margin-bottom: 15px;
-    padding: 12px 12px !important;
-    border: 0;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-.widget.widget-download ul li:last-child{
-    margin-bottom: 0;
-}
-.widget.widget-download ul li i,
-.widget.widget-download ul li div{
-    display: inline-block;
-    vertical-align: middle;
-}
-.widget.widget-download ul li a {
-    display: inline-block;
-    font-size: 15px;
-    line-height: 15px;
-    font-weight: normal;
-    color: inherit;
-    border: none;
-}
-.widget.widget-download ul li i {
-    font-size: 42px;
-    display: inline-block;
-    margin-right: 14px;
-}
-.widget.widget-download ul li h4{
-    font-size: 19px;
-    line-height: 19px;
-    margin-bottom: 0px;
-}
-.widget.widget-download ul li:hover{
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-    box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
-}
-
-
-/* widget-categories */
-.widget-Categories .widget-title, .widget-archive .widget-title{
-    margin-bottom: 20px;
-}
-.widget-Categories ul li:first-child { padding-top: 0 !important; }
-.widget-Categories ul li:last-child { padding-bottom: 0 !important; }
-.widget-Categories li span {
-    position: absolute;
-    right: 0;
-    top: 14px;
-    width: 22px;
-    height: 22px;
-    line-height: 23px;
-    text-align: center;
-    border-radius: 50%;
-    display: block;
-    font-size: 11px;
-    font-weight: 400;
-    transition: all .5s;
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
-    -moz-box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
-    box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
-}
-
-
-/* tagcloud */
-.widget .tagcloud a {
-    display: inline-block;
-    margin: 0 5px 10px 0;
-    padding: 7px 15px;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 3px;
-}
-
-
 /* pagination */
 .pagination-block {
     display: block;
@@ -2521,74 +2345,3 @@ ul.ttm-recent-post-list li:after {
     color: #fff;
 }
 .pagination-block .page-numbers i{ font-size: 12px; }
-
-
-
-/* ===============================================
-    22.Pricing-Plan
-------------------------*/
-.ttm-pricing-plan {
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
-    position: relative;
-    text-align: center;
-    z-index: 1;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    overflow: hidden;
-}
-.ttm-p_table-head {
-    padding: 25px 0;
-}
-.ttm-p_table-title h3 {
-    font-size: 28px;
-    line-height: 28px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-.ttm-p_table-amount .cur_symbol {
-    font-size: 26px;
-    font-weight: 700;
-}
-.ttm-p_table-amount, .ttm-p_table-price {
-    font-family: Poppins,sans-serif;
-    font-size: 49px;
-    line-height: 51px;
-    font-weight: 700;
-    vertical-align: sub;
-}
-.ttm-p_table-amount .pac_frequency {
-    position: relative;
-    font-weight: 700;
-    font-size: 20px;
-}
-.ttm-p_table-body {
-    padding: 30px 30px;
-    transition: all 0.5s ease;
-}
-.ttm-p_table-features {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.ttm-p_table-features li {
-    font-size: 16px;
-    line-height: 16px;
-    padding-top: 16px;
-    border-bottom: 1px solid #f1f1f1;
-    padding-bottom: 16px;
-}
-.ttm-p_table-features li:last-child{
-    padding-bottom: 10px;
-    border-bottom: 0;
-}
-.ttm-p_table-footer{
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    transition: all 0.5s ease;
-}

@@ -130,8 +130,10 @@ ul.menu-col li a:focus{
         transform-origin: 0% 50%;
         transition: transform 0.5s;
         transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+        background-color: var(--color-title);
     }
-    nav.main-menu ul.menu > li:hover > a:before, nav.main-menu ul.menu > li.active > a:before{
+    nav.main-menu ul.menu > li:hover > a:before, 
+    nav.main-menu ul.menu > li.active > a:before{
         transform: scale3d(1,1,1);
     }
     nav.main-menu li.mega-menu-item ul.mega-submenu li.mega-menu-item > a.mega-menu-link:before {
