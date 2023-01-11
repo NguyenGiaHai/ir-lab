@@ -241,7 +241,6 @@ body .page {
 body .site-main {
     position: relative;
     z-index: 1;
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -820,26 +819,19 @@ ul.menu-footer-quick-links li:nth-child(9) { width: 100%; }
 /* ===============================================
     Page-Title-Row
 ------------------------*/
-.block-page-title { 
-    background: url(../images/ttm-pagetitle-bg.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 1;
-}
 
-.block-page-title-inner { 
+.region-page-title {
     width: 100%;
     background-color: var(--color-sub-theme);
+    margin-bottom: 50px;
 }
 
-.block-page-title-inner .title {
+.region-page-title .title {
     color: var(--color-main-theme);
 }
 
-.block-page-title-inner .row{
-    min-height: 240px;
+.region-page-title .row{
+    min-height: 200px;
     margin: 0;
 }
 
