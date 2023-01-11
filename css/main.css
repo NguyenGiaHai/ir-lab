@@ -1243,6 +1243,11 @@ section.error-404 .page-content p { font-size: 18px; margin-bottom: 30px; }
 
 }
 
+.our-blogs .section-content {
+    display: block;
+    width: 100%;
+}
+
 /* --- Footer --- */
 .footer-top {
     border-bottom: 1px solid #fff;
